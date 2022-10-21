@@ -50,7 +50,7 @@ $users = $stmt->fetchAll();
                             <td><?= $user["created_at"] ?></td>
                             <td><?= $user["updated_at"] ?></td>
                             <td><button type="submit" name="userId" value="<?= $user["id"] ?>">UPDATE</button></td>
-                            <td><button type="submit" name="deleteUser">DELETE</button></td>
+                            <td><button type="submit" name="deleteUser" value="<?= $user["id"] ?>">DELETE</button></td>
                         </tr>
                     <?php } ?>
                 </tbody>
